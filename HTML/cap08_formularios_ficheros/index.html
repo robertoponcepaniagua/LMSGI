@@ -15,17 +15,89 @@
   <p>Y si quiere puede probar con un formulario más completo: <a href="formulario-html5.html">Formulario con nuevos campos HTML</a></p>
 
   <p> Es necesario que ejecutar en un entorno con servidor con PHP activo. </p>
-   
-  <form action="procesa.php" method="get">
+   <!-- post es para el examen no salen las claves ni nada en la barra de navegador el get es para comprobar y sale todo en la barra de navegación -->
+  <form action="atlas" method="post" enctype="multipart/form-data">
+    
+    <p>
+      <!-- label>select cada select tiene un nombre y id y cada respuesta tiene un valor "value=" el disabled es para ninguna opción disabled selected es para que selecione esa por defecto-->
+        <label for="provincia">Seleccione provincia</label>
+        <select name="provincia" id="provincia">
+          <option disabled selected>Selecciona</option>
+          <option value="CA">Cádiz</option>
+          <option value="SE">Sevilla</option>
+          <option value="MA">Malaga</option>
+        </select>
+    </p>
 
     <p>
-      <label>Usuario <input type="text" name="usuario"></label>
+      <!-- el tamaño del texto size="80" y el tamaño minimo de lo qe hay que escribir minlength="20" y max lo maximo maxlength="72" -->
+      <label>Texto de su queja <br>
+        <input type="text" name="queja" size="80" minlength="20" maxlength="40">
+      </label>
     </p>
+
     <p>
-      <label>Clave <input type="password" name="clave"></label>
+      <!-- textarea texto de area para el lado cols="72" para abajo rows="12"  -->
+      <label>Texto de su queja <br>
+        <textarea name="miqueja" cols="72" rows="12"></textarea>
+      </label>
+    </p>
+
+    <p>
+      <label for="">Seleccione color</label> <br>
+      <input type="color" name="micolor" id="micolor">
+    </p>
+
+    <p> Seleccione sus preferencias
+      <label><input type="checkbox" name="preferencias" value="C" >Cine</label>
+      <label><input type="checkbox" name="preferencias" value="T" checked>Teatros</label> 
+      <label><input type="checkbox" name="preferencias" value="V" >Viajes</label>
+      <!-- Checked en el label de en medio lo que hace es que venga la casilla marcada por defecto -->
+    </p>
+
+    <p>Seleccione su modulo preferido <br>
+      <!-- label>input:radio -->
+      <label><input type="radio" name="modulo" value="LMSGI">Lenguaje de Marcas</label><br>
+      <label><input type="radio" name="modulo" value="SI">Sistemas</label><br>
+      <label><input type="radio" name="modulo" value="BD">Bases de Datos</label>
+      <!-- Solo puedes elegir 1 y se ve en forma de circulo -->
+    </p>
+
+
+    <p>
+      <!-- el campo required como su nombre indica necesita ser relleado antes de enviar el formulario -->
+      <label> factura de compra <br>
+        <input type="file" name="factura" required>
+      </label>     
+    </p>
+
+
+
+    <p>
+      <label>Usuario <br>
+        <input type="text" name="usuario">
+      </label>
+    </p>
+
+    <p>
+      <!-- texto difuminado en gris, sirve para guiar que hay que poner placeholder="use su email personal" -->
+      <label>Correo electronico <br>
+        <input type="email" name="correo" placeholder="use su email personal">
+      </label>
+    </p>
+
+    <p>
+      <!-- type="password"  -->
+      <label>Clave <br>
+        <input type="password" name="clave">
+      </label>
     </p>    
+
     <p>
-      <label>Fecha <input type="date" name="fecha"></label>
+      <!-- type="date" -->
+      <label>Fecha <br>
+        <input type="date" name="fecha">
+      </label>
     </p>
 
     <p>
