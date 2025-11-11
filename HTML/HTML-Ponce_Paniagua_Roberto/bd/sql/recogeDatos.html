@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    
+<nav>
+    <h2>Recorra nuestro sitio web</h2>
+    
+        <ul>
+            <li><a href=""></a>Página inicial</li>
+            <li><a href=""></a>Recogida de datos</li>
+            <li><a href=""></a>Tabla de resultados</li>
+            <li><a href=""></a>Nuestro blog</li>
+        </ul>
+</nav>
+<!-- method="post" se utiliza cuadno hay contraseñas... enctype="multipart/form-data para cuando hay un archivo  -->
+<form action="/procesa/atlas.php" method="post" enctype="multipart/form-data">
+<!-- fieldset es el campo, el recuadro del formulario -->
+<fieldset>
+    <legend>Datos compra</legend>
+    <p>
+        <!-- label>input:number -->
+         <label>Número de unidades
+            <!-- value="1" es el valor por defecto, max="4" min="1" valores max y min step="2" es para que vaya de 2 en 2 este número se puede ediat por ejemplo decimales .1 any es para poder poner todos los decimales en el step-->
+            <input type="number" name="unidades" value="1" max="1000" min="1" step="any">
+        </label>
+    </p>
+
+</fieldset>
+
+<input type="submit" value="Enviar">
+<input type="reset" value="Borrar">
+
+</form>
+</body>
+</html>
