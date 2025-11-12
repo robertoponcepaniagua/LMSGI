@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Inicial Formulario</title>
+</head>
+<body>
+    <h1>Ejemplo Inicial Formulario</h1>
+
+    <form action="altas" method="post">
+
+        <!-- Se relaciona el label con el imput con el id, se pone dentro de label en for="id del imput"-->
+
+        <p>
+            <label for="usuario">Nombre de usuario</label> <br>
+            <input type="text" name="usuario" id="usuario">
+        </p>
+
+        <p>
+            <label for="clave">Introduzca la clave</label> <br>
+            <input type="password" name="usuario" id="clave">
+        </p>
+
+        <p>
+            <label>Fecha de compra <br>
+                <input type="date" name="fcompra">
+            </label>
+        </p>
+
+        <p>
+            <label>Correo electronico <br>
+                <input type="email" name="correo">
+            </label>
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+
+    </form>
+</body>
+</html>
