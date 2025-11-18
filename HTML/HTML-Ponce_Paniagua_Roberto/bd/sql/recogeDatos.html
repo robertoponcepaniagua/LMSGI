@@ -22,6 +22,14 @@
 <!-- fieldset es el campo, el recuadro del formulario -->
 <fieldset>
     <legend>Datos compra</legend>
+
+    <p>Selecciona la marca <br>
+        <label><input type="radio" name="marca" value="A">Marca A</label>
+        <label><input type="radio" name="marca" value="B">Marca B</label>
+        <label><input type="radio" name="marca" value="C">Marca C</label>
+        <label><input type="radio" name="marca" value="D">Marca D</label>
+    </p>
+
     <p>
         <!-- label>input:number -->
          <label>Número de unidades
@@ -30,8 +38,30 @@
         </label>
     </p>
 
-</fieldset>
+    <p>
+        <label for="ficheros">DNI Y FACTURA</label>
+        <input type="file" name="ficheros" id="ficheros" multiple>
+    </p>
 
+    <p>
+        <label for="fecha">Fecha compra <br> <input type="date" name="fecha" id="fecha"></label>
+    </p>
+
+    
+
+</fieldset>
+<fieldset>
+    <legend>Datos de Usuario</legend>
+    <p>
+        <label for="email">Usuario</label>
+        <input type="email" name="email" id="email" placeholder="Correo eléctronico">
+    </p>
+
+    <p>
+        <label for="código">Código: </label>
+        <input type="text" name="código" id="código" required>
+    </p>
+</fieldset>
 <input type="submit" value="Enviar">
 <input type="reset" value="Borrar">
 
