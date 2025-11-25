@@ -1,0 +1,57 @@
+/* Desactiva todo los estilos por defecto */
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+h1 {
+  text-align: center;
+}
+
+/* si hay dos estilos p gana la ultima */
+p {
+  color: blue;
+}
+p {
+  color: violet;
+}
+
+section p {
+  color: green;
+}
+
+section aside p {
+  color: red;
+}
+
+/* agrupación */
+/* h1 {
+    text-decoration: underline;
+    font-style:italic;
+}
+h2 {
+    text-decoration: underline;
+    font-style:italic;
+}
+h3 {
+    text-decoration: underline;
+    font-style:italic;
+} */
+
+/* es mejor así */
+
+h1,
+h2,
+h3 {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+/* Selector de clase */
+.novedad {
+  background-color: aquamarine;
+}
+
+.novedad.urgente {
+  color: tomato;
+}
