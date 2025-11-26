@@ -1,69 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>resultados</title>
 </head>
 <body>
-    
-Recorra nuestro sitio web
-
-    Página inicial
-    Recogida de datos
-    Tabla de resultados
-    Nuestro blog
-
-    <h1>Ejemplo de tabla HTML</h1>
-
+     <nav>
+        <h2>Recorra nuestro sitio web</h2>
+        <ul>
+            <li>
+                <a href="../index.html">Página inicial</a>
+            </li>
+            <li>
+                <a href="../bd/sql/recogeDatos.html">Recogida de datos</a>
+            </li>
+            <li>
+                <a href="resultados.html">Tabla de resultados</a>
+            </li>
+            <li>
+                <a href="../blog/blog.html">Nuestro blog</a>
+            </li>
+        </ul>
+    </nav>
+<h1>Ejemplo de tabla HTML</h1>
 <p>En primer lugar observe <strong>la siguiente figura:</strong></p>
-
 <figure>
-    <img src="/figuras/tabla-examen-html.png" alt="resultados del modulo" width="434" height="124">
+    <img src="../figuras/tabla-examen-html.png" alt="tabla del examen" width="434" height="124">
 </figure>
-
 <p>Ahora codifique una tabla HTML que represente la información de la figura anterior. Le recordamos que lo importante es la semántica, no la presentación.</p>
-
-<p><strong>Aviso:</strong> Aquí debe aparecer su tabla HTML.</p>
-
-<table border="1">
-    <caption>Resultados módulo</caption>
+<table border="1" style="text-align: center;">
     <tr>
         <th scope="col">Examen</th>
         <th scope="col">Aprobados</th>
         <th scope="col">Suspensos</th>
-        <th scope="col">Inventore, dolorem.</th>
-        <th scope="col">Sint, veritatis?</th>
+        <th scope="col">No presentados</th>
+        <th scope="col">Total</th>
     </tr>
     <tr>
-        <th scope="col">1ºEv</th>
-        <td colspan="2">Lorem, ipsum.</td>
-        <!-- <td>Lorem, ipsum.</td> -->
-        <td>Lorem, ipsum.</td>
-        <td>Lorem, ipsum.</td>
+        <th scope="row">1ª Ev</th>
+        <td colspan="2">8</td>
+        <td>14</td>
+        <td>30</td>
     </tr>
     <tr>
-        <th scope="col">2ºEv</th>
-        <td rowspan="2">Lorem, ipsum.</td>
-        <td>Lorem, ipsum.</td>
-        <td>Lorem, ipsum.</td>
-        <td>Lorem, ipsum.</td>
+        <th scope="row">2ª EV</th>
+        <td rowspan="2">9</td>
+        <td>7</td>
+        <td>9</td>
+        <td>26</td>
     </tr>
     <tr>
-        <th scope="col">3ºEv</th>
-        <!-- <td>Lorem, ipsum.</td> -->
-        <td colspan="2" rowspan="2">Lorem, ipsum.</td>
-        <td>Lorem, ips.</td>
-        <!-- <td>Lorem, ipsu.</td> -->
+        <th scope="row">3ª EV</th>
+        <td rowspan="2" colspan="2">6</td>
+        <td>21</td>
     </tr>
     <tr>
-        <th scope="col">Final</th>
-        <td>Lorem, ipsum.</td>
-        <td>Lorem, ipsum.</td>
-        <!-- <td>Lorem, ipsum.</td> -->
-        <!-- <td>Lorem, ipsum.</td> -->
+        <th scope="row">Final</th>
+        <td>6</td>
+        <td >18</td>
     </tr>
 </table>
-
+<p><strong>Aviso:</strong> Aquí debe aparecer su tabla HTML.</p>
 </body>
 </html>
