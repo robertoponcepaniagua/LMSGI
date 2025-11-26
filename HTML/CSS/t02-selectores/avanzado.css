@@ -1,0 +1,36 @@
+/* Adjacente si después de un h2 hay un p se pone así */
+/* Este css está un poco mal, mejor bajarlo de la moodle */
+/* Atributos */
+dfn[title] {
+  background-color: firebrick;
+}
+
+/* sibling hermano o hermana necesitan estar al mismo nível el h3 tiene que estar delante...(mirar internet) */
+h3 ~ h4 {
+  background-color: cornflowerblue;
+}
+
+h2 + p {
+  background-color: lime;
+}
+h2 + p,
+h1 + p {
+  background-color: lime;
+}
+
+/* Hijo */
+article > p {
+  color: red;
+  text-align: center;
+}
+
+/* dentro de article y dentro de p se pone los siguientes */
+article p {
+  color: blue;
+  font-style: italic;
+}
+
+/* si estaá dentro de se utiliza article > h2 no article + h2 */
+article > h2 {
+  background-color: salmon;
+}
