@@ -55,3 +55,7 @@ h3 {
 .novedad.urgente {
   color: tomato;
 }
+/* selector de id */
+#resumen {
+  text-align: center;
+}
