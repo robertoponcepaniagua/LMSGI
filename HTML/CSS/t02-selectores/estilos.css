@@ -39,6 +39,10 @@ h3 {
 } */
 
 /* es mejor así */
+/* ya que está agrupados */
+
+/* también se puede así h1 , h2 , h3 {
+} */
 
 h1,
 h2,
@@ -47,15 +51,37 @@ h3 {
   font-style: italic;
 }
 
+/* con id */
+p#resumen {
+  text-align: center;
+}
+
+
+/* descendente */
+
+section p {
+  color: brown;
+}
+
+section aside p {
+  color: azure;
+}
+
 /* Selector de clase */
 .novedad {
   background-color: aquamarine;
 }
-
-.novedad.urgente {
+/* slector de clase encadenado
+tiene que cumplir los selectoresc  */
+p.novedad.urgente {
   color: tomato;
 }
 /* selector de id */
 #resumen {
   text-align: center;
+}
+
+/* si es novedad o urgente */
+p.novedad , p.urgente {
+  color: yellow;
 }

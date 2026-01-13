@@ -13,6 +13,7 @@ h3 ~ h4 {
 h2 + p {
   background-color: lime;
 }
+/* adyacente (justo al lado, a continuación) */
 h2 + p,
 h1 + p {
   background-color: lime;
@@ -34,3 +35,29 @@ article p {
 article > h2 {
   background-color: salmon;
 }
+
+
+/* atributos */
+[title] {
+  background-color: blueviolet;
+}
+
+[title="pendiente"] {
+  background-color: firebrick;
+}
+
+
+[title*="pendiente"] {
+  background-color: wheat;
+}
+/* si termina en .pdf */
+[href$=".pdf"] {
+  background-color: orange;
+}
+
+/* comienza por */
+
+[href^="https://"] {
+  background-color: rosybrown;
+}
+
