@@ -1,0 +1,41 @@
+h1 {
+    color: rgb(255, 0, 0);
+}
+
+h1 + p{
+    color: rgb(0,255,0);
+}
+
+p {
+    color: #0af;
+}
+
+:nth-child(4) {
+    color: hsl(0, 100%, 50%);
+    /* h = tono s = saturación y l = luminosidad */
+}
+
+:nth-child(3) {
+    color: tomato;
+}
+
+/* medidas */
+
+h1 {
+    font-size: 3em;
+    margin-left: 2em;
+}
+
+p {
+    font-size: 50%;
+}
+
+/* absolutas */
+
+section h2 {
+font-size: 1.5cm;
+}
+
+section p {
+    
+}
