@@ -1,0 +1,44 @@
+/* texto css */
+h1 {
+    color: red;
+}
+
+/* tamaño */
+h1 {
+    font-size: 1em;
+}
+
+/* negrita - bold */
+
+h1 {
+    font-weight: bold;
+}
+em {
+    font-weight: bold;
+}
+/* italica - italic */
+h1 {
+    font-style: italic;
+}
+
+em {
+    font-style: normal;
+    background-color: lightblue;
+}
+
+#fuentes p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section h2 {
+    font: 32px italic;
+}
+
+/* ALINEACION */
+h1 {
+    text-align: right;
+}
+
+#fuentes {
+    text-align: justify;
+}

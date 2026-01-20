@@ -1,0 +1,17 @@
+#png /* puede tener fondo transparente*/ {
+        background-image: url(pensando.png);
+        background-color: aqua;
+    }
+#jpg /* no puede tener fondo transparente*/  {
+    background-image: url(pensando.jpg);
+    background-color: aqua;
+}
+h1 {
+    width: 60%;
+    margin: auto;
+    border: 2px red solid;
+    box-shadow: 20px 10px 5px red;
+    border-radius: 30px;
+    padding: 20px;
+    text-shadow: 4px 6px 5px blue;
+}

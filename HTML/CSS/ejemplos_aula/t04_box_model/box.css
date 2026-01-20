@@ -1,0 +1,316 @@
+/* box css */
+
+p {
+    border: 4px red solid; /*dashed , dotted, double...*/
+}
+
+h2 {
+    border-bottom-color: blue;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-top: green dashed 2px;
+}
+
+/* PADDING O RELLENO DISTANCIA ENTRE EL BORDE Y EL RELLENO */
+p {
+    padding: 2em;
+    padding-right: 0;
+    padding-top: 4em;
+    padding-left: 3em;
+    margin-bottom: 6em;
+}
+
+img {
+    border: 6px red double;
+    padding: 4em;
+    margin: 3em;
+}
+
+/* margin -margenes */
+
+p {
+    margin: 10px 20px 30px 40px;
+    /* sentido de las agujas del reloj el primero es arriba el segundo derecha... */
+}
+
+img {
+    margin: 3px;
+}
+
+/* background color */
+
+p {
+    background-color: yellow;
+    background-image:  url(../../../Firstfear-Whistlepuff-Css.48.png);
+    background-repeat: repeat-y;/* hay muchas maneras de ponerlo vertical, horizontas, no repeat... */
+    background-position: right center; 
+    padding-right: 48px;
+}
+
+section {
+    background-color: cyan;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
