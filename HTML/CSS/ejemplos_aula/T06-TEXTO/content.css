@@ -1,0 +1,16 @@
+h1::before {
+    content: "iker maricona ";
+    background-color: fuchsia;
+}
+
+h2::after {
+    content: "Full random";
+    font-style: italic;
+    color: aqua;
+}
+
+abbr::after {
+    content: " - " attr(title)" - ";
+    color: chartreuse;
+    font-style: italic;
+}

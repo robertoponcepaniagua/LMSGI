@@ -42,3 +42,12 @@ h1 {
 #fuentes {
     text-align: justify;
 }
+
+h1::first-letter {
+    font-size: 4em;
+    background-color: aliceblue;
+}
+
+h2 + p::first-line {
+    background-color: yellow;
+}

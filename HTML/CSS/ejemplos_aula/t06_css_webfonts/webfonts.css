@@ -19,6 +19,12 @@
   font-family: nuevaFuente;
 }
 
+/* definición de una fuente en fichero */
+@font-face {
+  font-family: nuevafuente;
+  src: url("mona_shark/Mona\ Shark.otf");
+}
+
 
 /* Código auxiliar */
 pre {
