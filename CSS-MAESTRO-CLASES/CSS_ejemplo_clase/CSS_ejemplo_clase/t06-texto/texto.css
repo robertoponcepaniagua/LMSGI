@@ -1,0 +1,43 @@
+/* texto.css */
+h1::first-letter {
+    font-size: 4em;
+    background-color: pink;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-decoration: underline turquoise 2px double;
+    text-align: center;
+    color:#b12626;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: italic;
+    border-bottom: 2px red solid;
+}
+
+h2 + p::first-line {
+   background-color: yellow; 
+}
+
+h2 + p {
+    text-transform: uppercase;
+}
+
+em {
+    font-weight: bold;  /* negrita */
+    font-style: normal;
+    background-color: lightpink
+}
+section#fuentes  h2 {
+    font: italic  bold 32px   monospace;
+}
+
+#fuentes p {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+h3 {
+    font-variant: small-caps;
+}

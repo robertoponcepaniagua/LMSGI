@@ -1,0 +1,13 @@
+/* content.css */
+
+h1::before {
+    content: "Título: ";
+    background-color: yellow;
+}
+
+h2::after {
+    content: " - subpartado.";
+    font-style: italic;
+    color:red;
+}
+

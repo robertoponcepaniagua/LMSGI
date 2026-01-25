@@ -1,0 +1,34 @@
+/* box.css */
+
+p {
+    border: 4px red dotted; /* dashed, dotted, double, ... */
+}
+
+h2 {
+    border-bottom-color: blue;
+    border-bottom-width: 4px;
+    border-bottom-style: double;
+    border-top: green dashed 2px;
+}
+
+p {
+    padding: 2em;  /* shorthand */
+    padding-right: 0;
+    padding-top: 4em;
+    margin: 10px 20px ;
+    background-color: yellow;
+    background-image: url(./Css.48.png);
+    background-repeat: repeat-y;
+    background-position: right center;
+    padding-right: 48px; /* ancho de la imagen */
+}
+
+section {
+    background-color: cyan;
+}
+
+img {
+    border: 6px red double;
+    padding: 4em;
+    margin: 3em;
+}

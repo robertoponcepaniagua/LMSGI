@@ -1,0 +1,57 @@
+/* avanzados.css */
+
+/* atributos */
+abbr[title] {
+    background-color: red;
+}
+[title="pendiente"]  {
+    background-color: black;
+}
+
+[title*="pendiente"]  {
+    background-color: black;
+}
+
+[href$=".pdf"] {
+    background-color: darkorange;
+}
+
+[href^="https://"] {
+    background-color: greenyellow;
+}
+
+/* .enlacePDF {
+    background-color: darkorange;
+} */
+
+
+
+
+/* sibling */
+h3 ~ h4 {
+    background-color: yellow;
+}
+
+
+
+/* adyacente  */
+h2+p,
+h1+p {
+    background-color: lime;
+}
+
+article > h2 {
+    background-color: lightcoral;
+}
+
+
+/* hijo */
+article > p {
+    color: red;
+    text-align: center;
+}
+
+article p {
+    color: blue;
+    font-style: italic;
+}

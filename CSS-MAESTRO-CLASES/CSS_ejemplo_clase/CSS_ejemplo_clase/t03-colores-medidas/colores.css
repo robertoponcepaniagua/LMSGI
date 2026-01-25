@@ -1,0 +1,41 @@
+/* colores.css */
+h1 {
+    color: #ff0000;
+}
+h1 + p  {
+    color: rgb(0,100%,50%);
+}
+p {
+    color:#0af
+}
+
+:nth-child(4) {
+    color: hsl(128, 50%, 25%);
+}
+
+:nth-child(3) {
+    color: tomato;
+}
+
+/* p:last-child {
+    font-weight: bold;
+} */
+
+
+/* medidas  */
+
+h1 {
+    font-size: 3em;
+    margin-left: 2em;
+}
+
+p {
+    font-size: 50%;
+}
+
+/* aBSOLUTAS */
+
+section h2 {
+   font-size: 1.5cm
+}
+

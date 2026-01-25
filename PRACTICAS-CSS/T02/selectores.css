@@ -1,0 +1,95 @@
+/* ----------------------------------------------------SELECOTR UNIVERSAL------------------------------------------------------------- */
+/* Se utiliza para seleccionar todos los elementos de la página */
+
+* {
+    color: brown;
+}
+
+/* -----------------------------------------------Selector de tipo o etiqueta-------------------------------------------------------- */
+
+h1 {
+    color: red;
+}
+
+/* Si queremos aplicar los mismos estilos a las etiquetas por ejemplo h2, h3, h4 que sea con un color por ejemplo, en vez que hacerlo separado así:
+
+h2 {
+color: #8A8E27;
+}
+
+h3 {
+color: #8A8E27;
+}
+
+h4 {
+color: #8A8E27;
+}
+
+
+podemos simplificarlo:
+
+*/
+
+h2, h3, h4 {
+color: #8A8E27;
+}
+
+
+/* --------------------------------------------------------Selector Descendente----------------------------------------------------------- */
+
+/* Selecciona los elementos que se encuentran dentro de otros elementos */
+
+p span {
+    color: cornflowerblue;
+}
+
+/* osea todos los elementos dentro de p que sean span se convertiran de color cornflowerblue */
+
+/* ---------------------------------------------------------Selector de clase (con .)---------------------------------------------------- */
+
+
+/* 
+
+<body>
+<p class="destacado">Lorem ipsum dolor sit amet...</p>
+<p>Nunc sed lacus et est adipiscing accumsan...</p>
+<p>Class aptent taciti sociosqu ad litora...</p>
+</body>
+
+*/
+
+
+/* los selescotores de clase se ponen con un . en el html se ven así: class="destacado" */
+.destacado {
+    color: blueviolet;
+}
+
+/* El selector p.destacado se interpreta como "aquellos elementos de tipo <p> que
+dispongan de un atributo class con valor destacado" */
+
+p.destacado {
+    background-color: aqua;
+}
+
+
+/* ----------------------------------------------------Selectores de ID (con #)------------------------------------------------------------------ */
+
+/* 
+
+<p>Primer párrafo</p>
+<p id="destacado">Segundo párrafo</p>
+<p>Tercer párrafo</p>
+
+*/
+
+#destacado {
+    color: forestgreen;
+}
+
+/* -------------------------------------------------------Combinación de selectores básicos----------------------------------------------------- */
+
+.aviso .especial {
+    color: slateblue;
+    font-style: italic;
+    font-size: 4em;
+}

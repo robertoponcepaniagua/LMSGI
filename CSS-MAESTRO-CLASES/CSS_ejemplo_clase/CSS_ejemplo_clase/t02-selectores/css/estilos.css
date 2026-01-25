@@ -1,0 +1,60 @@
+/* selector de id */
+p#resumen {
+    text-align: center;
+}
+
+/* selector de clase */
+.novedad {
+    background-color: cyan;
+}
+p.novedad.urgente {
+    color: yellow;
+}
+
+p.urgente {
+    font-weight: bold;
+    color: yellow;
+}
+
+/* de tag */
+h1.especial {
+    text-align: center;
+}
+
+p {
+    color: blue;
+}
+
+/* descendente */
+section p {
+    color: green;
+}
+
+section aside p {
+    color: brown;
+}
+
+/* agrupación */
+h1, h2, h3 {
+    text-decoration: underline;
+    font-style: italic;
+}
+/* h1 {
+    text-decoration: underline;
+    font-style: italic;
+}
+h2 {
+    text-decoration: underline;
+    font-style: italic;
+}
+h3 {
+    text-decoration: underline;
+    font-style: italic;
+}  */
+
+
+
+/* * {
+  margin: 0;
+  padding: 0;
+} */

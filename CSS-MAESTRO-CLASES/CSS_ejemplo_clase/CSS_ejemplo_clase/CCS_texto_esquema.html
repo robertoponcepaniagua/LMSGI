@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.11.1/styles/default.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"CSS texto esquema","children":[{"content":"La fuente","children":[{"content":"<pre data-lines=\"4,12\"><code data-lines=\"4,12\">* <span class=\"hljs-built_in\">color</span>\n* <span class=\"hljs-built_in\">font</span>-size\n* <span class=\"hljs-built_in\">font</span>-weight\n* <span class=\"hljs-built_in\">font</span>-<span class=\"hljs-built_in\">style</span>\n* <span class=\"hljs-built_in\">font</span>-family\n* <span class=\"hljs-built_in\">font</span>\n</code></pre>","children":[],"payload":{"tag":"pre","lines":"4,12"}}],"payload":{"tag":"h3","lines":"3,4"}},{"content":"Decoraci&#xf3;n","children":[{"content":"<pre data-lines=\"16,23\"><code data-lines=\"16,23\">* text-align\n* text-decoration \n* font-variant\n* text-transform\n* text-indent\n</code></pre>","children":[],"payload":{"tag":"pre","lines":"16,23"}}],"payload":{"tag":"h3","lines":"14,15"}},{"content":"Distribuci&#xf3;n","children":[{"content":"<pre data-lines=\"26,33\"><code data-lines=\"26,33\"><span class=\"hljs-bullet\">* </span>vertical-align\n<span class=\"hljs-bullet\">* </span>line-height\n<span class=\"hljs-bullet\">* </span>letter-spacing\n<span class=\"hljs-bullet\">* </span>word-spacing\n<span class=\"hljs-bullet\">* </span>white-space\n</code></pre>","children":[],"payload":{"tag":"pre","lines":"26,33"}}],"payload":{"tag":"h3","lines":"24,25"}},{"content":"Pseudoelementos","children":[{"content":"<pre data-lines=\"35,39\"><code data-lines=\"35,39\">* <span class=\"hljs-symbol\">:</span><span class=\"hljs-symbol\">:first-line</span>\n* <span class=\"hljs-symbol\">:</span><span class=\"hljs-symbol\">:first-letter</span>\n</code></pre>","children":[],"payload":{"tag":"pre","lines":"35,39"}}],"payload":{"tag":"h3","lines":"34,35"}},{"content":"Amplia","children":[{"content":"web fonts","children":[],"payload":{"tag":"li","lines":"41,42"}},{"content":"genera contenido<pre data-lines=\"43,48\"><code data-lines=\"43,48\">* <span class=\"hljs-selector-pseudo\">::after</span> <span class=\"hljs-attribute\">y</span> <span class=\"hljs-selector-pseudo\">::before</span>\n* <span class=\"hljs-attribute\">content</span>:\n* <span class=\"hljs-built_in\">attr</span>()\n</code></pre>","children":[],"payload":{"tag":"li","lines":"42,48"}}],"payload":{"tag":"h3","lines":"40,41"}}],"payload":{"tag":"h2","lines":"1,2"}},{})</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+/* impresora.css */
+
+abbr::after {
+    content: " - " attr(title) " - ";
+    color: blue;
+    font-style: italic;
+}
