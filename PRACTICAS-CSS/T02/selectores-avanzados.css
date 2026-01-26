@@ -98,3 +98,77 @@ a[class~="externo"] {
 
 
 /*  --------------------------------------------------------Agrupación de reglas-------------------------------------------------- */
+
+/* Básicammente explica que en vez de poner las reglas de estilos css en una sola línea como el siguiente ejemplo: */
+h5 { color: red; }
+
+
+/*
+
+h5 { color: red; }
+
+h5 { font-size: 2em; }
+
+h5 { font-family: Verdana; } 
+
+*/
+
+
+/* Se puede hacer tal que así: */
+h5 {
+color: red;
+font-size: 2em;
+font-family: Verdana;
+}
+
+/* ------------------------------------------------------------Herencia--------------------------------------------------------------- */
+
+/* Cuando se establece el valor de alguna propiedad en un elemento,
+todos sus descendientes heredan inicialmente ese mismo valor. */
+
+
+/* 
+
+
+Si se indica por ejemplo un tipo de letra al elemento <body> de una página, todos los
+elementos de la página mostrarán ese tipo de letra, salvo que se indique lo contrario:
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ejemplo de herencia de estilos</title>
+<style type="text/css">
+body { font-family: Arial; color: black; }
+h1 { font-family: Verdana; }
+p { color: red; }
+</style>
+</head>
+<body>
+<h1>Titular de la página</h1>
+<p>Un párrafo de texto no muy largo.</p>
+</body>
+</html>
+
+
+
+*/
+
+/* ----------------------------------------------------------------Colisiones de estilos--------------------------------- */
+
+/* Básicamente si hay colisiones de estilos iguales gana SIEMPRE la que está abajo o gana la más concreta, es decir la más especifica */
+p.colisiones {
+    color: blue;
+    background-color: chartreuse;
+    font-size: 4em;
+}
+
+p.colisiones {
+    color: green;
+    background-color: darkred;
+    font-size: 2em;
+}
+
+/* Esto es un poco lioso mejor verlo en un video */

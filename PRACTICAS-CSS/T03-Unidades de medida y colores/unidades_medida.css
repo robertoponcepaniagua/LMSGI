@@ -1,0 +1,94 @@
+/* ----------------------------------------------------------Unidades relativas-------------------------------------------- */
+/* Tamaño base del texto de toda la página.
+   Se usa em para que dependa del tamaño por defecto del navegador */
+body {
+    font-size: 0.9em; /* 90% del tamaño de letra por defecto */
+}
+
+/* Párrafo con tamaño normal */
+.parrafo-normal {
+    font-size: 1em; /* Igual al tamaño de letra del elemento padre */
+}
+
+/* Párrafo con texto más grande */
+.parrafo-grande {
+    font-size: 1.2em; /* 20% más grande que el tamaño base */
+}
+
+/* Párrafo con texto más pequeño */
+.parrafo-pequeno {
+    font-size: 0.8em; /* 20% más pequeño que el tamaño base */
+}
+
+/* Ejemplo de uso de píxeles como base */
+.contenedor {
+    font-size: 10px; /* Tamaño base fijo en píxeles */
+}
+
+/* El tamaño se calcula multiplicando el em por el font-size del padre */
+.titulo {
+    font-size: 2.5em; /* 2.5 × 10px = 25px */
+}
+
+/* Uso de em en otra propiedad */
+.texto-indentado {
+    text-indent: 3em; /* Sangría igual a 3 veces el tamaño de letra actual */
+}
+
+/* Ejemplo de herencia:
+   el valor en em se calcula primero y luego se hereda en píxeles */
+.padre {
+    font-size: 12px;
+    text-indent: 3em; /* 3 × 12px = 36px */
+}
+
+.hijo {
+    font-size: 15px; /* El text-indent heredado sigue siendo 36px */
+}
+
+
+/* ver mejor en el pdf */
+
+
+/* -------------------------------------------------------Unidades absolutas----------------------------------------- */
+/* 
+
+
+▪ in, del inglés "inches", pulgadas (1 pulgada son 2.54 centímetros)
+▪ cm, centímetros
+▪ mm, milímetros
+▪ pt, puntos (1 punto equivale a 1 pulgada/72, es decir, unos 0.35 milímetros)
+▪ pc, picas (1 pica equivale a 12 puntos, es decir, unos 4.23 milímetros)
+ 
+
+*/
+
+/* ---------------------------------------------------------Porcentajes--------------------------------------------- */
+
+/* Tamaño base del texto */
+body {
+    font-size: 1em; /* Tamaño de letra base del navegador */
+}
+
+/* Uso de porcentajes en el tamaño de letra */
+h1 {
+    font-size: 200%; /* Equivale a 2em (200% del tamaño del padre) */
+}
+
+h2 {
+    font-size: 150%; /* Equivale a 1.5em (150% del tamaño del padre) */
+}
+
+/* Contenedor principal con anchura fija */
+#contenido {
+    width: 600px; /* Anchura fija en píxeles */
+    border: 2px solid black;
+    padding: 10px;
+}
+
+/* Elemento hijo con anchura relativa */
+.principal {
+    width: 80%; /* 80% de la anchura del elemento padre (#contenido) */
+    border: 2px dashed blue;
+    padding: 10px;
+}

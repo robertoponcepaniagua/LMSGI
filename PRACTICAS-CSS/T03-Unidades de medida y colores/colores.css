@@ -1,0 +1,41 @@
+/* -----------------------------------RGB decimal--------------------------------- */
+
+/*  R (rojo), G (verde) y B (azul) */
+
+/* De azul tiene 176 así que se va a ver azúl, o un tono del mismo */
+.rgb-decimal {
+    color: rgb(71, 98, 176); /* Predomina el azul */
+}
+
+/* ----------------------------------------------RGB porcentual-------------------------- */
+.rgb-porcentual {
+    color: rgb(27%, 38%, 69%);
+}
+/* --------------------------------------------RGB hexadecimal-------------------------- */
+
+/* Estilos generales de la página */
+body {
+    background-color: #FFF; /* Blanco */
+    color: #000;           /* Negro */
+    font-family: Arial, sans-serif;
+}
+
+/* Títulos desde h2 con color hexadecimal */
+.titulo-hex {
+    color: #C00; /* Rojo (#CC0000) */
+}
+
+/* Color hexadecimal completo (6 dígitos) */
+.texto-hex-completo {
+    color: #4762B0;
+}
+
+/* Color hexadecimal abreviado (3 dígitos) */
+.texto-hex-abreviado {
+    color: #369; /* #336699 */
+}
+
+/* Color hexadecimal con letras */
+.texto-hex-letras {
+    color: #A0F; /* #AA00FF */
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Unidades relativas en CSS</title>
+    <link rel="stylesheet" href="unidades_medida.css">
+</head>
+<body>
+
+    <h1 class="titulo">Ejemplo de unidades relativas</h1>
+
+    <p class="parrafo-normal">
+        Este párrafo tiene un tamaño de letra normal (1em).
+    </p>
+
+    <p class="parrafo-grande">
+        Este párrafo es un 20% más grande que el tamaño base (1.2em).
+    </p>
+
+    <p class="parrafo-pequeno">
+        Este párrafo es un 20% más pequeño que el tamaño base (0.8em).
+    </p>
+
+    <div class="contenedor">
+        <h2 class="titulo">Título dentro de un contenedor</h2>
+
+        <p class="texto-indentado">
+            Este texto tiene una sangría en la primera línea usando em.
+        </p>
+    </div>
+
+    <div class="padre">
+        <h2>Elemento padre</h2>
+        <p>
+            Este texto pertenece al elemento padre.
+        </p>
+
+        <div class="hijo">
+            <p>
+                Este texto es del elemento hijo, pero hereda la sangría ya calculada.
+            </p>
+        </div>
+    </div>
+
+
+    <h1>Encabezado H1 al 200%</h1>
+    <h2>Encabezado H2 al 150%</h2>
+
+    <div id="contenido">
+        <p>
+            Este es el contenedor padre con una anchura fija de 600px.
+        </p>
+
+        <div class="principal">
+            <p>
+                Este div ocupa el 80% del ancho del contenedor padre.
+            </p>
+        </div>
+    </div>
+
+
+</body>
+</html>
