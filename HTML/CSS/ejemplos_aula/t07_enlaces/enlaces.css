@@ -27,7 +27,7 @@ article a:hover {
     font-weight: bold;
 }
 
-/* al hacer clic */
+/* al hacer clic */ 
 article a:active {
     border: 2px red solid;
 }
