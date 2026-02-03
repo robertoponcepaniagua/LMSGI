@@ -1,0 +1,66 @@
+ header {
+     width: 70%;
+     margin: auto;
+
+     border: red 2px dotted;
+     border-radius: 40px;
+     padding: 2em;
+     box-shadow: 20px 10px red;
+ }
+
+
+ header img {
+     float: left;
+     padding: 1em;
+ }
+
+ @font-face {
+     font-family: 'Kranky';
+     src: url('../fuentes/Kranky-Regular.ttf');
+ }
+
+ section ul {
+     list-style-type: circle;
+     font-family: 'Kranky';
+ }
+
+ section ul li:nth-child(4n+2) {
+     text-decoration: underline blue 4px solid;
+     /* border-bottom: blue 4px solid; */
+ }
+
+
+
+ h1::first-letter,
+ h2::first-letter {
+     color: blue;
+     font-size: 300%;
+     font-family: 'Kranky';
+ }
+
+ /* h1::first-letter {
+    color: blue;
+    font-size: 300%;
+    font-family: 'Kranky';
+} */
+
+
+
+ a[href$=".zip"]::after,
+ a[href$=".tar"]::after {
+     content: "File: " attr(href);
+     background-color: yellow;
+ }
+
+
+ aside {
+     background-color: silver;
+     width: 80%;
+     margin: auto;
+     padding: 1em;
+     margin: 2em;
+     background-repeat: repeat-x;
+     padding-top: 128px;
+     background-image: url(../figuras/Limav-Movie-Genres-Folder-Film-Noir.128.png);
+     
+ }
