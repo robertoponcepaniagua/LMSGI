@@ -1,0 +1,55 @@
+/* Estilos generales */
+body {
+    font-family: Arial;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+/* CONTENEDOR */
+.contenedor {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+}
+
+/* CAJA BASE */
+.caja {
+    width: 300px;
+    background-color: lightblue;
+
+    padding: 50px;
+    border: 10px solid black;
+    margin: 30px;
+}
+
+/* MODELO NORMAL */
+.normal {
+    box-sizing: content-box;
+}
+
+/* MODELO MODERNO */
+.borderbox {
+    box-sizing: border-box;
+    background-color: lightcoral;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

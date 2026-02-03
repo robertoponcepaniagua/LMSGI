@@ -1,0 +1,31 @@
+body {
+    background-color: #f0f0f0;
+}
+
+/* Caja principal */
+.caja {
+    /* CONTENIDO */
+    width: 300px;
+    height: 100px;
+
+    /* RELLENO (padding) */
+    padding: 20px;
+
+    /* BORDE */
+    border: 5px solid black;
+
+    /* COLOR DE FONDO */
+    background-color: lightblue;
+
+    /* IMAGEN DE FONDO */
+    background-image: url("https://via.placeholder.com/150");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* MARGEN */
+    margin: 40px;
+
+    /* Texto */
+    color: black;
+    font-weight: bold;
+}

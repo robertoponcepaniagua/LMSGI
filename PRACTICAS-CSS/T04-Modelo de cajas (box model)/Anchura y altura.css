@@ -1,0 +1,41 @@
+/* Padre más ancho */
+.padre {
+    width: 800px;
+    background-color: #ccc;
+    padding: 20px;
+}
+
+/* 1️⃣ MEDIDA FIJA */
+.medida {
+    width: 300px;
+    background-color: lightblue;
+    border: 3px solid black;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+/* 2️⃣ PORCENTAJE */
+.porcentaje {
+    width: 50%; /* 50% de 800px = 400px */
+    background-color: lightgreen;
+    border: 3px solid black;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+/* 3️⃣ AUTO */
+.auto {
+    width: auto; /* ocupa lo que necesite */
+    background-color: lightcoral;
+    border: 3px solid black;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+/* 4️⃣ INHERIT */
+.inherit {
+    width: inherit; /* hereda 800px */
+    background-color: lightsalmon;
+    border: 3px solid black;
+    padding: 10px;
+}

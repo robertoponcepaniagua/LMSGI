@@ -1,0 +1,38 @@
+/* Padre CON altura definida (IMPORTANTE para %) */
+.padre {
+    height: 500px;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+/* 1️⃣ HEIGHT con medida */
+.medida {
+    height: 100px;
+    background-color: lightblue;
+    border: 3px solid black;
+    margin-bottom: 15px;
+}
+
+/* 2️⃣ HEIGHT con porcentaje */
+.porcentaje {
+    height: 50%; /* 50% de 500px = 250px */
+    background-color: lightgreen;
+    border: 3px solid black;
+    margin-bottom: 15px;
+}
+
+/* 3️⃣ HEIGHT auto */
+.auto {
+    height: auto;
+    background-color: lightcoral;
+    border: 3px solid black;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+/* 4️⃣ HEIGHT inherit */
+.inherit {
+    height: inherit; /* hereda 500px */
+    background-color: lightsalmon;
+    border: 3px solid black;
+}

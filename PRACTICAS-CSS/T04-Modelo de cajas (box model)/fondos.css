@@ -1,0 +1,44 @@
+/* Fondo general de la página */
+body {
+    background-color: lightgray;
+}
+
+/* Caja con solo color */
+.caja1 {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Caja con imagen repetida */
+.caja2 {
+    background-image: url("fondo.webp");
+    background-repeat: repeat;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Caja con imagen sin repetir */
+.caja3 {
+    background-image: url("fondo.webp");
+    background-repeat: no-repeat;
+    padding: 50px;
+    margin: 20px;
+}
+
+/* Caja con imagen posicionada */
+.caja4 {
+    background-image: url("fondo.webp");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 50px;
+    margin: 20px;
+}
+
+/* Caja con fondo fijo */
+.caja5 {
+    background-image: url("fondo.webp");
+    background-attachment: fixed;
+    padding: 50px;
+    margin: 20px;
+}
