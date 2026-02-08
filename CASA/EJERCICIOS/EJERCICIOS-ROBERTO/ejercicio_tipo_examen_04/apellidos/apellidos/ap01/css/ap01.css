@@ -1,0 +1,79 @@
+/* nav, article, header, section, aside {
+    border: double green 4px;
+    padding: 1em;
+} */
+
+#container > * {
+    border: double green 4px;
+    padding: 1em;
+}
+
+#container {
+    border: double green 4px;
+}  
+
+@media (min-width:562px) {
+    #container {
+        border: none;
+        background-color: yellow;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        grid-template-areas: 
+        "nav      aside   "
+        "cabecera aside  "
+        "article  article   "
+        "section  section   ";
+    }  
+    header {
+        grid-area: cabecera;
+    }
+    section {
+        grid-area: section;
+    }
+    article {
+        grid-area: article;
+    }
+    aside {
+        grid-area: aside;
+    }
+    nav {
+        grid-area: nav;
+    }
+
+}
+
+
+
+@media (min-width:960px) {
+    #container {
+        background-color: lightgreen;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-areas: 
+        "aside   nav       nav"
+        "aside   cabecera  article "
+        "section section    article      ";
+    }  
+
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        list-style-type: none;
+        border: 4px blue solid;
+        padding-left: 0;
+        background-color: lightcoral;
+
+    }
+    nav ul li {
+        border: 4px blue solid;
+        padding: 0.5em;
+        text-align: center;
+    }
+    nav ul li a {
+        text-decoration: none;
+        display: block;
+    }
+
+
+
+}

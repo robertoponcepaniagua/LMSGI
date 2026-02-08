@@ -1,0 +1,33 @@
+/* apartado1.css */
+@font-face {
+    font-family: "Pacifico";
+    src: url("../fuentes/Pacifico/Pacifico-Regular.ttf") format("truetype");
+}
+
+h1 {
+    font-family: "Pacifico";
+    font-size: 1em; /*tamaño de la letra*/
+    text-align: right; /*alineación de el texto al borde derecho*/
+    border-bottom: 1px solid black; /* el borde de 1px solido y de color negro */
+}
+
+blockquote {
+    padding: 2em 2em 2em 2em; /* distancia del contenido del borde */
+    border-style: dashed; /*el estilo que estamos utilizando en los bordes*/
+    border-radius: 20px;
+    box-shadow: 30px 20px 5px 0px red; /* la sombra */
+}
+
+blockquote::before { /* después de u blockquote */
+    content: "Cita";
+    font-style: italic;
+    font-weight: bold;
+}
+
+section {
+    padding-top: 10px;
+}
+
+abbr {
+    
+}
