@@ -1,1 +1,54 @@
 /* apartado1.css */
+@font-face {
+  font-family: "Pacifico";
+  src: url("../fuentes/Pacifico/Pacifico-Regular.ttf");
+}
+
+footer ol li:hover {
+    background-color: olive;
+}
+
+h1 {
+  font-size: 2em;
+  font-family: "Pacifico", serif;
+  text-align: right;
+  border-bottom: solid 2px;
+}
+
+blockquote {
+  padding: 2em 2em 2em 2em;
+  border: dashed 6px red;
+  border-radius: 20px;
+  box-shadow: 30px 20px 10px red;
+  font-style: italic;
+  margin-left: 0;
+}
+blockquote > cite::before {
+  content: "Autor: ";
+  font-weight: bold;
+}
+
+blockquote::before {
+  content: "Cita: ";
+  font-weight: bold;
+}
+
+footer ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: 2px red solid;
+    list-style-type: none;
+    background-color: salmon;
+    padding-left: 0;
+}
+footer ol li {
+    border: 2px red solid;
+    padding: 0.5em;
+    text-align: center;
+}
+
+footer ol li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}

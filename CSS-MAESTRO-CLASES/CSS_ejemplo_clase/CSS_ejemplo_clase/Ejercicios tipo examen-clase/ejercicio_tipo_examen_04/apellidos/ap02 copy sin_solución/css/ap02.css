@@ -1,41 +1,50 @@
 @font-face {
-    font-family: Kranky ; /* Nombre que le damos a la fuente */
-    src: url(../fuentes/Kranky-Regular.ttf); 
+  font-family: Kranky; /* Nombre que le damos a la fuente */
+  src: url(../fuentes/Kranky-Regular.ttf);
 }
 aside {
-    width: 70%;
-    background-color:darkcyan;
-    margin: auto;
-    background-image: url(../figuras/Limav-Movie-Genres-Folder-Film-Noir.128.png);
-    background-repeat: repeat-x;
-    padding-top: 128px;
+  width: 70%;
+  background-color: darkcyan;
+  margin: auto;
+  background-image: url(../figuras/Limav-Movie-Genres-Folder-Film-Noir.128.png);
+  background-repeat: repeat-x;
+  padding-top: 128px;
 }
 
 header {
-    border-radius: 30px;
-    border-style: dotted;
-    border-color: red;
-    margin: auto;
-    width: 70%;
-    box-shadow: 30px 10px red;
-    padding: 30px 10px 10px 30px;
+  border-radius: 30px;
+  border-style: dotted;
+  border-color: red;
+  margin: auto;
+  width: 70%;
+  box-shadow: 30px 10px red;
+  padding: 30px 10px 10px 30px;
 }
-header>img {
-    float: left;
-    padding: 0.5em;
-}
-
-h1::first-letter, h2::first-letter {
-    font-family: Kranky;
-    font-size: 3em;
-    color: blue;
+header > img {
+  float: left;
+  padding: 0.5em;
 }
 
-section ul{
-    font-family: Kranky;
-    list-style-type: circle;
+h1::first-letter,
+h2::first-letter {
+  font-family: Kranky;
+  font-size: 3em;
+  color: blue;
 }
 
-section ul li:nth-child(4n+2) {
-    text-decoration: underline dashed blue 4px;
+section ul {
+  font-family: Kranky;
+  list-style-type: circle;
+}
+
+section ul li:nth-child(4n + 2) {
+  text-decoration: underline dashed blue 4px;
+}
+
+a[href$=".zip"]::after,
+a[href$=".tar"]::after {
+  /*el attr sirve para mostrar el atributo de un elemento*/
+  content: "file:" attr(href);
+  background-color: yellow;
+  background-image: url();
 }
