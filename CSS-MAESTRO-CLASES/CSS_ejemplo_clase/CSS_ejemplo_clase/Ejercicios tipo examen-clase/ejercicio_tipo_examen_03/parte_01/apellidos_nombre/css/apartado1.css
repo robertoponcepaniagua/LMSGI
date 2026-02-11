@@ -4,8 +4,6 @@
   src: url("../fuentes/Pacifico/Pacifico-Regular.ttf");
 }
 
-
-
 /* footer ol li:hover {
     background-color: olive;
 } */
@@ -36,25 +34,59 @@ blockquote::before {
 }
 
 footer ol {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    border: 2px red solid;
-    list-style-type: none;
-    background-color: salmon;
-    padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border: 2px red solid;
+  list-style-type: none;
+  background-color: salmon;
+  padding-left: 0;
 }
 footer ol li {
-    border: 2px red solid;
-    padding: 0.5em;
-    text-align: center;
+  border: 2px red solid;
+  padding: 0.5em;
+  text-align: center;
 }
 
 footer ol li a {
-    text-decoration: none;
-    color: white;
-    display: block;
+  text-decoration: none;
+  color: white;
+  display: block;
 }
 
-footer ol li:nth-child(2n+2) {
-    background-color: olive;
+footer ol li:nth-child(2n + 2) {
+  background-color: olive;
+}
+
+article img {
+  border: 4px blue double;
+  margin: 0.5em;
+  padding: 1em;
+}
+
+article:nth-of-type(2n + 1) img {
+  float: right;
+}
+
+article:nth-of-type(2n + 2) img {
+  float: left;
+}
+
+ol {
+  list-style-type: upper-alpha;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+[title]::after {
+  content: attr(title);
+  color: green;
+  font-size: 0.7em;
+  vertical-align: top;
+  font-style: italic;
+}
+
+h2 + p::first-line,
+h3 + p::first-line {
+  color: red;
+  text-transform: uppercase;
 }
