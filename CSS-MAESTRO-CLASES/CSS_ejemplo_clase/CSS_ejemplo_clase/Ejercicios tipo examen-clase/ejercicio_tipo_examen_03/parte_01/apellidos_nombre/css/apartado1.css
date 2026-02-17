@@ -90,3 +90,9 @@ h3 + p::first-line {
   color: red;
   text-transform: uppercase;
 }
+
+dt {
+  padding-left: 16px;
+  background-image: url(../figuras/arrow-right-icon.png) ;
+  background-repeat: no-repeat;
+}

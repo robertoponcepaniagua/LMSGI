@@ -1,0 +1,8 @@
+/* layout_01.css */
+
+div {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr; /*fr son fraciones, el número de valores son el número de columnas*/
+    gap: 2em; /*separacición de celdas*/
+}
+

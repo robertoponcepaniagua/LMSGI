@@ -1,0 +1,50 @@
+/* Ahora distintas formas de disponerlas */
+
+/* en vertical */
+nav.vertical  {
+    width: 30%;
+    max-width: 240px;
+    min-width: 120px;
+}
+
+/* en horizontal con GRID */
+nav.grid ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* 50% 50% */
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* otras formas ... */
+/*  en horizontal con flex */
+nav.flex ul {
+    display: flex;
+}
+nav.flex ul li {
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* flex: 1; */
+}
+
+/* Explicación uso FLEX
+    1. Contenedor: Al aplicar display: flex; al elemento ul, estás activando el contexto de Flexbox. Al activar flex, se alinean automáticamente en una fila horizontal.
+    2. Elementos: flex: 1; Esta es una propiedad abreviada (shorthand) que se aplica a los hijos directos. Decir flex: 1; es lo mismo que escribir:
+        flex-grow: 1: El elemento tiene permiso para crecer y ocupar el espacio sobrante.
+        flex-shrink: 1: El elemento puede encogerse si el contenedor se hace muy pequeño.
+        flex-basis: 0: El tamaño inicial del elemento es 0 antes de repartir el espacio.
+    Si tienes 4 elementos li y todos tienen flex: 1, el navegador dividirá el ancho total del ul en 4 partes iguales.
+
+    Si quisieras que un elemento fuera el doble de grande que los demás, podrías cambiar su valor individual a flex: 2;
+*/
+
+
+
+
+/*  en horizontal con float */
+nav.float ul li {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+}
+nav.float ul {
+    overflow: auto;
+}

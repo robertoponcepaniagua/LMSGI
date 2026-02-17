@@ -1,0 +1,27 @@
+a img {
+    border: blue 3px solid;
+    box-shadow: 20px 10px  blue;
+    margin-right: 48px;
+}
+
+.marco {
+    padding: 16px;
+    border: double 6px green;
+}
+
+/* sí y sólo sí queremos que la imagen
+   se adapte al ancho disponible */
+img.rwd {
+    width: 60%;
+    min-width: 150px;
+    max-width: 500px;
+    height: auto;
+}
+
+
+/* uso de la propiedad float con imágenes */
+
+#flotante img {
+    float: left;
+    padding: .5em;
+}
