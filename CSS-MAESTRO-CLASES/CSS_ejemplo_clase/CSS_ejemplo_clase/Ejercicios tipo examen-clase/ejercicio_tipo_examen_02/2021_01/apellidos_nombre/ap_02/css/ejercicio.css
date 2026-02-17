@@ -1,0 +1,91 @@
+abbr::after, dfn::after {
+    content: attr(title);
+    font-size: 0.5em;
+    vertical-align: super;
+    font-style: italic;
+}
+
+
+abbr::before, dfn::before {
+    margin-left: 10px;
+    content: "";
+    display: inline-block;
+    /* hay que definir el tamaño de la imagen por eso el width y el height */
+    width: 16px;
+    height: 16px;
+    background-image: url("../fig/books-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Barra de navegación */
+nav ol{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-transform: uppercase;
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+}
+nav ol li:nth-child(1n+1) {
+    border: 2px blue solid;
+    background-color: aqua;
+}
+nav ol li:nth-child(2n+1) {
+    background-color: greenyellow;
+}
+
+/* h2 */
+@font-face {
+    font-family:"Creeps" ;
+    src: url("fuentes/Creepster/Creepster-Regular.ttf");
+}
+
+#principal > h2 {
+    font-family:"Creeps" ;
+    margin-left: 8em;
+    margin-right: 8em;
+    font-size: 2em;
+    border-top: 4px solid red;
+    border-bottom: 4px solid red;
+    text-align: center;
+}
+
+/* code */
+pre {
+    background-color: black;
+    color: white;
+    background-image: url(../fig/python-icon.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    margin-top: 2em;
+    padding-bottom: 5em;
+}
+
+/* letra gris */
+.revisar:nth-of-type(2n+2) {
+    color: grey;
+    font-style: italic;
+}
+
+/* img */
+
+img {
+    margin: 2em;
+    padding: 1em;
+    border: red 2px solid;
+    box-shadow: 20px 20px 5px red;
+    float: right;
+}
+
+/* pie de pagina */
+
+ol li {
+    list-style: lower-roman;
+    
+}
+
+ol li:nth-child(n+5) {
+    text-decoration: line-through;
+    font-style: italic;
+}
