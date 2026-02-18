@@ -1,42 +1,42 @@
-abbr::after, dfn::after {
+/* abbr::after, dfn::after {
     content: attr(title);
     font-size: 0.5em;
     vertical-align: super;
     font-style: italic;
-}
+} */
 
 
-abbr::before, dfn::before {
+/* abbr::before, dfn::before {
     margin-left: 10px;
     content: "";
-    display: inline-block;
+    display: inline-block; */
     /* hay que definir el tamaño de la imagen por eso el width y el height */
-    width: 16px;
+    /* width: 16px;
     height: 16px;
     background-image: url("../fig/books-icon.png");
     background-repeat: no-repeat;
     background-size: contain;
-}
+} */
 
 /* Barra de navegación */
-nav ol{
+/* nav ol{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     text-transform: uppercase;
     list-style: none;
     padding: 0px;
     text-align: center;
-}
-nav ol li:nth-child(1n+1) {
+} */
+/* nav ol li:nth-child(1n+1) {
     border: 2px blue solid;
     background-color: aqua;
 }
 nav ol li:nth-child(2n+1) {
     background-color: greenyellow;
-}
+} */
 
 /* h2 */
-@font-face {
+/* @font-face {
     font-family:"Creeps" ;
     src: url("fuentes/Creepster/Creepster-Regular.ttf");
 }
@@ -49,10 +49,10 @@ nav ol li:nth-child(2n+1) {
     border-top: 4px solid red;
     border-bottom: 4px solid red;
     text-align: center;
-}
+} */
 
 /* code */
-pre {
+/* pre {
     background-color: black;
     color: white;
     background-image: url(../fig/python-icon.png);
@@ -60,27 +60,27 @@ pre {
     background-position: bottom;
     margin-top: 2em;
     padding-bottom: 5em;
-}
+} */
 
 /* letra gris */
-.revisar:nth-of-type(2n+2) {
+/* .revisar:nth-of-type(2n+2) {
     color: grey;
     font-style: italic;
-}
+} */
 
 /* img */
 
-img {
+/* img {
     margin: 2em;
     padding: 1em;
     border: red 2px solid;
     box-shadow: 20px 20px 5px red;
     float: right;
-}
+} */
 
 /* pie de pagina */
 
-ol li {
+/* ol li {
     list-style: lower-roman;
     
 }
@@ -88,4 +88,113 @@ ol li {
 ol li:nth-child(n+5) {
     text-decoration: line-through;
     font-style: italic;
+} */
+
+
+
+section#principal > p.revisar {
+    font-style: italic;
+    color: gray;
+}
+
+@font-face {
+    font-family:"Creepster" ;
+    src: url("fuentes/Creepster/Creepster-Regular.ttf");
+}
+
+section > h2 {
+    font-family: "Creepster",serif;
+    border-top: 2px red solid;
+    border-bottom:2px red solid;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 3em;
+}
+
+nav ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-left: 0;
+    list-style-type: none;
+    border: 2px solid blue;
+}
+
+nav ol li {
+    border: 2px solid blue;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: aqua;
+}
+
+nav ol li a {
+    /* el display block es para que sea más grande el enlace */
+    display: block;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+nav ol li:nth-child(2n+1) {
+    background-color: chartreuse;
+}
+
+/* al pasar el ratçon por encima */
+nav ol li a:hover {
+    color: azure;
+    text-shadow: 3px 3px 1px red;
+}
+
+/* para quitar el texto del h2 dentro de nav (mirar html para entender) */
+nav h2 {
+    display: none;
+}
+
+abbr::after, dfn::after {
+    content: attr(title);
+    vertical-align: top;
+    font-size: 0.5em;
+    font-style: italic;
+}
+
+abbr[title], dfn[title] {
+    background-image: url(../fig/books-icon.png);
+    background-repeat: no-repeat;
+    /* hay que poner el padding de el tamaño de la figura, foto, poner el ratçon encima del enlace para ver los px */
+    padding-left: 16px;
+    /* para quitar el subrallado de abajo */
+    text-decoration: none;
+}
+
+footer ol {
+    list-style-type: lower-roman;
+    font-style: italic;
+}
+
+/* ciclos de 1 el 5, osea a partir del 5 cada 1 */
+footer ol li:nth-child(1n+5) {
+    text-decoration: line-through;
+}
+
+input[type="search"]:focus {
+    font-weight: bold;
+    color: brown;
+}
+
+img {
+    float: right;
+    border: red 1px solid;
+    box-shadow: 20px 10px 5px red;
+    padding: 1em;
+    margin: 2em;
+}
+
+pre {
+    background-color: black;
+    color: white;
+    background-image: url("../fig/python-icon.png");
+    background-repeat: repeat-x;
+    padding-bottom: 72px;
+    background-position: bottom;
 }
