@@ -1,79 +1,69 @@
-/* nav, article, header, section, aside {
-    border: double green 4px;
-    padding: 1em;
-} */
-
 #container > * {
-    border: double green 4px;
-    padding: 1em;
+  border: green double 5px;
 }
 
 #container {
-    border: double green 4px;
-}  
-
-@media (min-width:562px) {
-    #container {
-        border: none;
-        background-color: yellow;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1em;
-        grid-template-areas: 
-        "nav      aside   "
-        "cabecera aside  "
-        "article  article   "
-        "section  section   ";
-    }  
-    header {
-        grid-area: cabecera;
-    }
-    section {
-        grid-area: section;
-    }
-    article {
-        grid-area: article;
-    }
-    aside {
-        grid-area: aside;
-    }
-    nav {
-        grid-area: nav;
-    }
-
+  border: green double 5px;
 }
 
+@media screen and (min-width: 592px) {
+  #container {
+    border: none;
+    background-color: yellow;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "nav    aside   "
+      "header aside   "
+      "article article   "
+      "section section   ";
+  }
 
+  header {
+    grid-area: header;
+  }
 
-@media (min-width:960px) {
-    #container {
-        background-color: lightgreen;
-        grid-template-columns: 1fr 1fr 2fr;
-        grid-template-areas: 
-        "aside   nav       nav"
-        "aside   cabecera  article "
-        "section section    article      ";
-    }  
+  section {
+    grid-area: section;
+  }
 
-    nav ul {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        list-style-type: none;
-        border: 4px blue solid;
-        padding-left: 0;
-        background-color: lightcoral;
+  article {
+    grid-area: article;
+  }
 
-    }
-    nav ul li {
-        border: 4px blue solid;
-        padding: 0.5em;
-        text-align: center;
-    }
-    nav ul li a {
-        text-decoration: none;
-        display: block;
-    }
+  aside {
+    grid-area: aside;
+  }
 
+  nav {
+    grid-area: nav;
+  }
+}
 
+@media screen and (min-width: 960px) {
+  #container {
+    background-color: lightcoral;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "aside    nav     nav"
+      "aside    header  article"
+      "section  section article";
+  }
 
+  nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 0px;
+    list-style-type: none;
+    text-align: center;
+    border: red 4px solid;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: aqua;
+  }
+  nav ul a {
+    text-decoration: none;
+    display: block;
+  }
 }
