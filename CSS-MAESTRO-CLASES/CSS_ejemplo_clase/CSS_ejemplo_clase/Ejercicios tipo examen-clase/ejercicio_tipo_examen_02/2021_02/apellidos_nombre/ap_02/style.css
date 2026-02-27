@@ -1,0 +1,54 @@
+footer ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: green 2px solid;
+    padding-left: 0px;
+}
+
+footer ol li {
+    padding: 1em;
+    border: green 2px solid;
+    list-style-type: none;
+    background-color: yellow;
+    text-align: center;
+}
+
+footer ol li a {
+    color: lightcoral;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family:"Pacifico" ;
+    src: url(fuentes/Pacifico/Pacifico-Regular.ttf);
+}
+
+header h1 {
+    font-family: "Pacifico",sans-serif;
+    text-align: center;
+    border-bottom: 4px double black;
+}
+
+header blockquote {
+    border: 5px dotted lightcoral;
+    padding: 1.5em;
+    margin-right: 20em;
+    border-radius: 15px;
+    box-shadow: 60px 20px 2px lightcoral;
+}
+
+section h2 + p::first-line,section h3 + p::first-line {
+    color: red;
+}
+
+article:nth-child(2n+1) img {
+    float: left;
+}
+
+article:nth-child(2n+2) img {
+    float: right;
+}
+
+ol li {
+    list-style: url(figuras/arrow-right-icon.png);
+}
