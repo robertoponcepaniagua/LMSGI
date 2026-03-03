@@ -1,0 +1,52 @@
+#contenedor > * {
+    border: red 2px dashed;
+}
+
+header {
+  grid-area: header;
+}
+section {
+  grid-area: section;
+}
+article {
+  grid-area: article;
+}
+aside {
+  grid-area: aside;
+}
+nav {
+  grid-area: nav;
+}
+footer {
+    grid-area: footer;
+}
+
+@media screen and (min-width: 600px) {
+  #contenedor {
+    background-color: lightgoldenrodyellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "aside  nav"
+    "header header"
+    "article article"
+    "footer footer";
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #contenedor {
+    background-color: lightblue;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #contenedor {
+    background-color: lightpink;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nav footer footer"
+    "nav header aside"
+    "article article aside";
+  }
+}
