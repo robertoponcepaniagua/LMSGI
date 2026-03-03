@@ -1,0 +1,21 @@
+#contenedor > * {
+    border: red dashed 2px;
+}
+
+@media screen and (min-width: 600px) {
+    #contenedor {
+        background-color: orange;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #contenedor {
+        background-color: lightgoldenrodyellow;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #contenedor {
+        background-color: lightblue;
+    }
+}
